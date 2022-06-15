@@ -29,36 +29,51 @@
 		</header>
 
 		<section id="section_recherche">
-			<h1>Trouver votre hébergement pour des vacances de réve</h1>
-			<p>En plain centre ville ou en pleine nature</p>
+			<h1>Trouver votre hébergement pour des vacances de rêve</h1>
+			<p id="complement_h1">En plain centre ville ou en pleine nature</p>
 
 			<form method="post" action="#">
-				<p>
 					<label for="ville"><i class="fa-solid fa-location-dot"></i></label>
 					<input type="search" name="Recherche" id="ville" placeholder="Marseille, France"/>
-				</p>
-				<input type="submit" value="Rechercher" />
+					<input type="submit" value="Rechercher" />
 			</form>
 
-			<div>
+			<div id="section_filtres">
 				<p id="filtres">Filtres</p>
-				<div>
-					<div>
-						<i class="fa-solid fa-money-bill-wave"></i>
+				<div id="tout_les_filtres">
+
+					<div class="element_filtre">
+						<div class="fa-stack">
+							<i class="fa-solid fa-circle fa-stack-2x"></i>
+							<i class="fa-solid fa-money-bill-wave fa-stack-1x fa-inverse"></i>
+						</div>	
 						<p>Économique</p>
 					</div>
-					<div>
-						<i class="fa-solid fa-child-reaching"></i>
+
+					<div class="element_filtre">
+						<div class="fa-stack">
+							<i class="fa-solid fa-circle fa-stack-2x"></i>
+							<i class="fa-solid fa-child-reaching fa-stack-1x fa-inverse"></i>
+						</div>
 						<p>Familial</p>
 					</div>
-					<div>
-						<i class="fa-solid fa-heart"></i>
+
+					<div class="element_filtre">
+						<div class="fa-stack">
+							<i class="fa-solid fa-circle fa-stack-2x"></i>
+							<i class="fa-solid fa-heart fa-stack-1x fa-inverse"></i>
+						</div>
 						<p>Romantique</p>
 					</div>
-					<div>
-						<i class="fa-solid fa-dog"></i>
+
+					<div class="element_filtre">
+						<div class="fa-stack">
+							<i class="fa-solid fa-circle fa-stack-2x"></i>
+							<i class="fa-solid fa-dog fa-stack-1x fa-inverse"></i>
+						</div>
 						<p>Animaux autorisés</p>
 					</div>
+
 				</div>
 			</div>
 
