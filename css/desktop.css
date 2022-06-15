@@ -2,7 +2,7 @@
 
 
 body {
-    width: 90%;
+    width: 65%;
     margin: auto;
     font-family: 'Raleway', sans-serif;
 }
@@ -22,7 +22,7 @@ a:hover {
 header{
     display: flex;
     justify-content: space-between; 
-    height: 150px;
+    height: 125px;
 
 }
 
@@ -34,12 +34,12 @@ header{
 #menu { 
     display: flex;
     text-align: center;
-    width: 500px;
+    width: 300px;
     height: 100%;
     margin: 0%;
     padding: 0%;
     list-style-type: none;
-    font-size: 30px;
+    font-size: 20px;
     
 }
 
@@ -52,10 +52,19 @@ nav li {
 
 
 nav li:hover {
-    border-top: 5px blue solid;
-    padding-bottom: 5px;
+    border-top: 2px blue solid;
+    padding-bottom: 2px;
 }
 
 nav li:hover a {
     color: blue;
 }
+
+
+/* ----- Section Recherche ----- */
+
+
+#filtres {
+    font-weight: 700;
+}
+    
