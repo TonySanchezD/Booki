@@ -47,12 +47,15 @@ nav li {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: ;
     flex: 1; 
 }
 
 
 nav li:hover {
     border-top: 5px blue solid;
+    padding-bottom: 5px;
+}
+
+nav li:hover a {
     color: blue;
 }
