@@ -1,11 +1,14 @@
-/* ----- Body ----- */
+/* ---------- Body ---------- */
 
 
+* {
+    font-family: 'Raleway', sans-serif;
+}
 
 body {
     width: 65%;
     margin: auto;
-    font-family: 'Raleway', sans-serif;
+    
 }
 
 a {
@@ -17,7 +20,7 @@ a:hover {
     color: blue;
 }
 
-/* ----- Header ----- */
+/* ---------- Header ---------- */
 
 
 header{
@@ -41,7 +44,6 @@ header{
     padding: 0%;
     list-style-type: none;
     font-size: 20px;
-    
 }
 
 nav li { 
@@ -62,7 +64,7 @@ nav li:hover a {
 }
 
 
-/* ----- Section Recherche ----- */
+/* ---------- Section Recherche ---------- */
 
 
 h1 {
@@ -74,13 +76,14 @@ h1 {
     font-size: 18px;
 }
 
+/* -- Barre de recherche -- */
+
 form {
     width: 450px;
     height: 50px;
     display: flex; 
-    border: 2px #f2f2f2 solid;
-    border-radius: 15px;
-    
+    border: 1px #f2f2f2 solid;
+    border-radius: 20px;   
 }
 
 .element_form:nth-child(2) {
@@ -88,53 +91,98 @@ form {
 }
 
 form label { background-color: #f2f2f2;
-    width: 54px;
-    height: 54px;
-    margin-top: -2px;
-    margin-left: -2px;
-    border-radius: 11px 0px 0px 11px;
+    width: 52px;
+    height: 52px;
+    margin-top: -1px;
+    margin-left: -1px;
+    border-radius: 20px 0px 0px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.element_form:nth-child(1):hover .fa-location-dot {
+    font-size: 25px;
+    transition: 0.2s ease-out;
+}
+
 input[type=search] {
     width: 200px;
     border: 0px; 
-    margin-top: 4px; 
+    margin-top: 1px; 
+    padding-left: 15px;
+    font-weight: 700;
+    font-size: 18px;  
+}
+
+input[type=search]:focus{
+    outline: none;
 }
 
 ::placeholder{
     color: black;
-    font-family: 'Raleway';
+    font-family: 'Raleway'; 
     font-weight: 700;
-    font-size: 18px;
-    padding-left: 10px;
+    font-size: 18px;  
 }
 
 input[type=submit] {
-    height: 54px;
+    height: 52px;
     width: 130px;
-    margin-top: -2px;
-    margin-right: -2px;
+    margin-top: -1px;
+    margin-right: -1px;
     background-color: #0065FC;
-    border: 2px #0065FC solid;
-    border-radius: 0px 12px 12px 0px;
-    color: white;
+    border: 4px #0065FC solid;
+    border-radius: 0px 20px 20px 0px;
+    color: white; 
     font-weight: 700;
-    font-size: 18px;
-    font-family: 'Raleway';
-   
+    font-size: 18px;  
 }
+
+input[type=submit]:hover{
+    background-color: #0047b3;
+    border-color: #0047b3;
+}
+
+/* -- Filtres --*/
 
 #section_filtres {
     display: flex;
+    justify-content: space-around;
+    width: 900px;
+    margin: 20px 0px 20px 0px;
+    font-weight: 700;
+    font-size: 18px;
 }
-    
+
 #tout_les_filtres {
     display: flex;
+    justify-content: space-between;
+    width: 800px;
 }
 
 .element_filtre {
+    height: 50px;
     display: flex;
+    align-items: center;
+    border: 3px #f2f2f2 solid;
+    border-radius: 30px;
+}
+
+.fa-circle {
+    color: #DEEBFF;
+    height: 56px;
+    width: 56px;
+    margin-top: -10px;
+    margin-left: -6px;
+    border-radius: 30px;
+    background-color: #DEEBFF;
+}
+
+.icon_filtre {
+    color: #0065FC
+}
+
+.filtre {
+    padding-left: 10px;
 }
