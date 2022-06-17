@@ -218,4 +218,15 @@ input[type=submit]:hover{
 
 /* -- info --*/
 
+#section_info {
+    display: flex;
+    align-items: center;
+}
 
+.cercle_info {
+    color: #F2F2F2;
+}
+
+#section_info p {
+    margin-left: 8px;
+}
