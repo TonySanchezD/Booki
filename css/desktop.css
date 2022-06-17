@@ -17,9 +17,7 @@ a {
     color: black;
 }
 
-a:hover {
-    color: blue;
-}
+
 
 
 
@@ -67,7 +65,9 @@ nav li:hover a {
     color: blue;
 }
 
-
+header a:hover {
+    color: blue;
+}
 
 /* ---------- Section Recherche ---------- */
 
@@ -115,7 +115,7 @@ form label { background-color: #f2f2f2;
 }
 
 .fa-location-dot {
-    transition: 0.2s ease-out;
+    transition: 0.2s;
 }
 
 input[type=search] {
@@ -171,54 +171,50 @@ input[type=submit]:hover{
     font-size: 18px;
 }
 
-#section_filtres p {
-    margin-right: 20px;
-}
-
 #tout_les_filtres {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 900px;
+
 }
 
-.element_filtre {
-    height: 50px;
+#tout_les_filtres a {
     display: flex;
     align-items: center;
-    border: 3px #DEEBFF solid;
-    border-radius: 30px;
-    cursor: pointer;
 }
 
-.cercle_filtre {
+.filtre { 
+    height: 50px;
+    border: 2px #DEEBFF solid;
+    border-radius: 30px;
+    transition: background-color .3s;
+}
+
+.custom .cercle_icon { /* Pk juste .cercle_icon ne marche pas */
     color: #DEEBFF;
-    height: 56px;
-    width: 56px;
-    margin-top: -10px;
-    margin-left: -6px;
-    border-radius: 30px;
-    background-color: #DEEBFF;
-    
+    font-size: 54px;
+    bottom: -9px;
+    left: -3px;   
 }
 
-.icon_filtre {
-    color: #0065FC;  
+.custom .icon_filtre {
+    color: #0065FC;
+    left: 2px; 
+    transition: font-size .2s;
 }
 
-.element_filtre:hover {
-    background-color: #DEEBFF;
-    transition: 1s;
-}
-
-.element_filtre:hover .icon_filtre{
-    font-size: 25px;
-    transition: 1s;
-}
-
-.filtre {
+.text_filtre {
     padding: 0px 20px 0px 20px;
 }
 
+.filtre:hover {
+    background-color: #DEEBFF;
+    text-decoration: underline;
+}
+
+.filtre:hover .icon_filtre {
+    font-size: 25px;
+}
 
 /* -- info --*/
 
