@@ -1,6 +1,7 @@
 /* ---------- Body ---------- */
 
 
+
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -20,7 +21,10 @@ a:hover {
     color: blue;
 }
 
+
+
 /* ---------- Header ---------- */
+
 
 
 header{
@@ -64,7 +68,9 @@ nav li:hover a {
 }
 
 
+
 /* ---------- Section Recherche ---------- */
+
 
 
 h1 {
@@ -76,7 +82,9 @@ h1 {
     font-size: 18px;
 }
 
+
 /* -- Barre de recherche -- */
+
 
 form {
     width: 450px;
@@ -98,11 +106,15 @@ form label { background-color: #f2f2f2;
     border-radius: 20px 0px 0px 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+    cursor: pointer;
 }
 
 .element_form:nth-child(1):hover .fa-location-dot {
     font-size: 25px;
+}
+
+.fa-location-dot {
     transition: 0.2s ease-out;
 }
 
@@ -112,7 +124,8 @@ input[type=search] {
     margin-top: 1px; 
     padding-left: 15px;
     font-weight: 700;
-    font-size: 18px;  
+    font-size: 18px;
+    
 }
 
 input[type=search]:focus{
@@ -137,6 +150,7 @@ input[type=submit] {
     color: white; 
     font-weight: 700;
     font-size: 18px;  
+    cursor: pointer;
 }
 
 input[type=submit]:hover{
@@ -144,32 +158,39 @@ input[type=submit]:hover{
     border-color: #0047b3;
 }
 
+
 /* -- Filtres --*/
+
 
 #section_filtres {
     display: flex;
     justify-content: space-around;
-    width: 900px;
+    width: 1000px;
     margin: 20px 0px 20px 0px;
     font-weight: 700;
     font-size: 18px;
 }
 
+#section_filtres p {
+    margin-right: 20px;
+}
+
 #tout_les_filtres {
     display: flex;
     justify-content: space-between;
-    width: 800px;
+    width: 900px;
 }
 
 .element_filtre {
     height: 50px;
     display: flex;
     align-items: center;
-    border: 3px #f2f2f2 solid;
+    border: 3px #DEEBFF solid;
     border-radius: 30px;
+    cursor: pointer;
 }
 
-.fa-circle {
+.cercle_filtre {
     color: #DEEBFF;
     height: 56px;
     width: 56px;
@@ -177,12 +198,28 @@ input[type=submit]:hover{
     margin-left: -6px;
     border-radius: 30px;
     background-color: #DEEBFF;
+    
 }
 
 .icon_filtre {
-    color: #0065FC
+    color: #0065FC;  
+}
+
+.element_filtre:hover {
+    background-color: #DEEBFF;
+    transition: 1s;
+}
+
+.element_filtre:hover .icon_filtre{
+    font-size: 25px;
+    transition: 1s;
 }
 
 .filtre {
-    padding-left: 10px;
+    padding: 0px 20px 0px 20px;
 }
+
+
+/* -- info --*/
+
+
