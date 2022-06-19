@@ -48,7 +48,6 @@ header{
     margin: 0%;
     padding: 0%;
     list-style-type: none;
-    font-size: 20px;
 }
 
 nav li { 
@@ -56,6 +55,7 @@ nav li {
     align-items: center;
     justify-content: center;
     flex: 1; 
+    font-size: 20px;
 }
 
 
@@ -81,7 +81,6 @@ h1 {
 }
 
 #complement_h1 {
-    
     font-size: 18px;
 }
 
@@ -94,14 +93,14 @@ form {
     height: 50px;
     display: flex; 
     border: 1px #f2f2f2 solid;
-    border-radius: 20px;   
-}
+    border-radius: 20px;  
+} 
 
 .element_form:nth-child(2) {
     flex: 1;
 }
 
-form label { background-color: #f2f2f2;
+form label { background-color: #F2F2F2;
     width: 52px;
     height: 52px;
     margin-top: -1px;
@@ -109,8 +108,8 @@ form label { background-color: #f2f2f2;
     border-radius: 20px 0px 0px 20px;
     display: flex;
     justify-content: center;
-    align-items: center; 
-    cursor: pointer;
+    align-items: center;  
+    cursor: pointer; 
 }
 
 .element_form:nth-child(1):hover .fa-location-dot {
@@ -118,11 +117,11 @@ form label { background-color: #f2f2f2;
 }
 
 .fa-location-dot {
-    transition: 0.2s;
+   transition: 0.2s;
 }
 
 input[type=search] {
-    width: 200px;
+    width: 100%;
     border: 0px; 
     margin-top: 1px; 
     padding-left: 15px;
@@ -135,7 +134,7 @@ input[type=search]:focus{
     outline: none;
 }
 
-::placeholder{
+::placeholder {
     color: black;
     font-family: 'Raleway'; 
     font-weight: 700;
@@ -161,6 +160,9 @@ input[type=submit]:hover{
     border-color: #0047b3;
 }
 
+#loupe {
+    display: none;
+}
 
 /* -- Filtres --*/
 
