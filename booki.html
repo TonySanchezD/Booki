@@ -3,14 +3,21 @@
 	
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/desktop.css">
 		<link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="css/smartphone.css">
+		<link rel="stylesheet" type="text/css" media="screen and (min-width: 768px) and (max-width: 992px)" href="css/tablette.css">
+
+		<!-- Font Awesome -->
 		<script src="https://kit.fontawesome.com/2097049bf6.js" crossorigin="anonymous"></script>
+		<!-- Font Awesome -->
+
 		<!-- font -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 		<!-- font -->
+
 		<title>Booki</title>
 	</head>
 
@@ -37,36 +44,36 @@
 				<form method="post" action="#">
 					<label class="element_form" for="ville"><i class="fa-solid fa-location-dot fa-lg"></i></label>
 					<input class="element_form" type="search" name="Recherche" id="ville" placeholder="Marseille, France"/>
-					<input class="element_form" type="submit" value="Rechercher">
-					<i class="fa-solid fa-magnifying-glass" id="loupe"></i>
+					<input class="element_form" type="submit" value="Recherche">
+					<input class="element_form fa fa-input" type="submit" value="&#xf002">
 				</form>
 
 				<div id="section_filtres">
-					<p>Filtres</p>
+					<p id="filtres">Filtres</p>
 					<div id="tout_les_filtres">
 
-						<a href="#" class="filtre">
+						<a href="#" class="filtres">
 							<span class="fa-stack custom">
 								<i class="fa-solid fa-money-bill-wave fa-stack-1x icon_filtre"></i>
 							</span>	
 							<p class="text_filtre">Économique</p>
 						</a>
 								
-						<a href="#" class="filtre">
+						<a href="#" class="filtres">
 							<span class="fa-stack custom">
 								<i class="fa-solid fa-child-reaching fa-stack-1x icon_filtre"></i>
 							</span>
 							<p class="text_filtre">Familial</p>
 						</a>
 								
-						<a href="#" class="filtre">
+						<a href="#" class="filtres">
 							<span class="fa-stack custom">
 								<i class="fa-solid fa-heart fa-stack-1x icon_filtre"></i>
 							</span>
 							<p class="text_filtre">Romantique</p>
 						</a>
 								
-						<a href="#" class="filtre">
+						<a href="#" class="filtres">
 							<span class="fa-stack custom">
 								<i class="fa-solid fa-dog fa-stack-1x icon_filtre"></i>
 							</span>
@@ -86,17 +93,17 @@
 
 			</section>
 
-			<div id="hebergements" class="body_width">
+			<div id="hebergements" class="body_width"> <!--div ou section?-->
 
-				<section id="tout_les_hébergements">
+				<section id="hebergements_marseille">
 
 					<h2>Hébergements à Marseille</h2>
 
-					<div>
+					<div id="tout_hebergements">
 
 						<a href="#">
 							<div>
-								<figure> <!--balise "figure" ou mettre "img" dans div et "Auberge de La Cannebière" en h3 dans autre div?-->
+								<figure> <!--balise "figure" ou mettre "img" dans une div et "Auberge de La Cannebière" en h3?-->
 									<img class="img_hebergement" src="images/hebergements/la_cannebière.jpg" alt="Photo d'une chambre de l'auberge La Cannebière" />
 									<figcaption>Auberge de La Cannebière</figcaption> 
 								</figure>
