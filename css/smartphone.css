@@ -35,12 +35,12 @@ nav {
 
 }
 
-nav li {
+nav a {
     font-size: 24px;
     border-bottom: 4px #F2F2F2 solid;
 }
 
-nav li:hover {
+nav a:hover {
     border-top: none;
     border-bottom: 4px #0065FC solid;
     padding-top: 2px;

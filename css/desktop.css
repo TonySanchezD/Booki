@@ -40,7 +40,7 @@ header{
     align-items: center;
 }
 
-#menu { 
+ #menu { 
     display: flex;
     text-align: center;
     width: 400px;
@@ -50,7 +50,7 @@ header{
     list-style-type: none;
 }
 
-nav li { 
+nav a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,19 +58,13 @@ nav li {
     font-size: 20px;
 }
 
-
-nav li:hover {
+nav a:hover {
     border-top: 2px #0065FC solid;
     padding-bottom: 2px;
-}
-
-nav li:hover a {
     color: #0065FC;
 }
 
-header a:hover {
-    color: #0065FC;
-}
+
 
 /* ---------- Section Recherche ---------- */
 
