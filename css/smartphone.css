@@ -46,8 +46,6 @@ nav a:hover {
     padding-top: 2px;
 }
 
-
-
 /* ---------- Section Recherche ---------- */
 
 
@@ -111,8 +109,10 @@ form .fa-input {
     width: 100%;
 }
 
-#filtres  {
+#filtres  { 
+    justify-content: flex-start;
     margin-bottom: 5px;
+    width: 100%;
 }
 
 #tout_les_filtres {
