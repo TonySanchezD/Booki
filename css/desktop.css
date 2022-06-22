@@ -259,6 +259,7 @@ figure {
     background-color: white;
     border-radius: 25px;
     box-shadow: 5px 5px 10px #e0e0e0, 0px 0px 10px #e0e0e0;
+    transition: border-color 0.3s;
 }
 
 figcaption { 
@@ -269,6 +270,9 @@ figcaption * {
     margin: 0px 0px 5px 0px;
 }
 
+a[class="hebergement"]:hover, figure:hover {
+    border-color: #0065FC;
+}
 /* -- star -- */
 
 .star {
@@ -276,51 +280,72 @@ figcaption * {
     font-weight: 900;
 }
 
-.star5::before {
-    content: "\f005" "\f005" "\f005" "\f005" "\f005";
+:root {
+    --star: "\f005";
+    --two-star: var(--star) var(--star);
+    --three-star: var(--two-star) var(--star);
+    --four-star: var(--three-star) var(--star);
+    --five-star: var(--four-star) var(--star);
+
+}
+
+figure ::before {
     color: #0065FC;
+}
+
+figure ::after {
+    color: #e0e0e0;
+}
+
+.star5::before {
+    content: var(--five-star);
 }
 
 .star4::before {
-    content: "\f005" "\f005" "\f005" "\f005";
-    color: #0065FC;
+    content: var(--four-star);
 }
 
 .star4::after {
-    
-    content: "\f005";
-    color: #e0e0e0;
+    content: var(--star);
 }
 
 .star3::before {
-    content: "\f005" "\f005" "\f005";
-    color: #0065FC;
+    content:  var(--three-star);
 }
 
 .star3::after {
-    content: "\f005" "\f005";
-    color: #e0e0e0;
+    content: var(--two-star);
 }
 
 .star2::before {
-    content: "\f005" "\f005";
-    color: #0065FC;
+    content: var(--two-star);
 }
 
 .star2::after {
-    content: "\f005" "\f005" "\f005";
-    color: #e0e0e0;
+    content: var(--three-star);
 }
 
 .star1::before {
-    content: "\f005";
-    color: #0065FC;
+    content: var(--star);
 }
 
 .star1::after {
-    content: "\f005" "\f005" "\f005" "\f005";
-    color: #e0e0e0;
+    content: var(--four-start);
 }
+
+
+
+/*.star(x)::before {
+    content: (x) *"\f005" ;
+    color: #0065FC;
+}
+
+.star(x)::after {
+    content:  ((x)-5) *"\f005";
+    color: #e0e0e0;
+}*/
+
+
 /* ---------- Section hébergements ----------*/
 
 
@@ -336,6 +361,7 @@ figcaption * {
 
 #hebergements_marseille { 
     width: 75%;
+    height: 700px;
     background-color: #f2f2f2;
     border-radius: 30px;
     margin-right: 5%;
@@ -358,10 +384,15 @@ figcaption * {
     width: 100%;
     height: 150px;
     object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
- 
+    border-radius: 17px 17px 0px 0px;
 }
 
+
+
+#afficher_plus {
+    font-size: 24px;
+    font-weight: bold;
+}
 
 /* -- Les plus populaires --*/
 
