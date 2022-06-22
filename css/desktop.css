@@ -11,7 +11,7 @@ body {
 }
 
 main { 
-    width: 75%;
+    width: 90%;
     margin: auto; 
 }
 
@@ -30,7 +30,7 @@ header{
     display: flex;
     justify-content: space-between; 
     height: 125px;
-    width: 75%;
+    width: 90%;
     margin: auto; 
 }
 
@@ -165,7 +165,7 @@ form .fa-input {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 5px 0px 20px 0px;
+    margin: 20px 0px 20px 0px;
     font-weight: 700;
     font-size: 18px;
     margin-left: 20px;
@@ -173,13 +173,13 @@ form .fa-input {
 }
 
 #filtres {
-    margin: 15px 20px 0px 0px;
+    margin: 15px 30px 0px 0px;
 
 }
 
-#tout_les_filtres {
+#tout_les_filtres { 
     display: flex;
-    width: 900px;
+    width: 1000px;
     flex-wrap: wrap;
 }
 
@@ -194,7 +194,7 @@ form .fa-input {
     border: 2px #DEEBFF solid;
     border-radius: 30px;
     transition: background-color .3s;
-    margin-right: 20px;
+    margin-right: 30px;
     margin-top: 15px;
 
 }
@@ -259,7 +259,7 @@ figure {
     background-color: white;
     border-radius: 25px;
     box-shadow: 5px 5px 10px #e0e0e0, 0px 0px 10px #e0e0e0;
-    transition: border-color 0.3s;
+    transition: box-shadow 0.5s;
 }
 
 figcaption { 
@@ -270,10 +270,13 @@ figcaption * {
     margin: 0px 0px 5px 0px;
 }
 
-a[class="hebergement"]:hover, figure:hover {
-    border-color: #0065FC;
+figure:hover {
+    box-shadow: 20px 20px 20px #e0e0e0, 2px 2px 10px #e0e0e0;;
 }
+
+
 /* -- star -- */
+
 
 .star {
     font-family: "Font Awesome 5 free";
@@ -281,7 +284,7 @@ a[class="hebergement"]:hover, figure:hover {
 }
 
 :root {
-    --star: "\f005";
+    --star: "\f005"; /* "\005" est une étoile avec la police Font Awesome */
     --two-star: var(--star) var(--star);
     --three-star: var(--two-star) var(--star);
     --four-star: var(--three-star) var(--star);
@@ -341,9 +344,14 @@ figure ::after {
 }
 
 .star(x)::after {
-    content:  ((x)-5) *"\f005";
+    content:  (5 - (x)) *"\f005";
     color: #e0e0e0;
-}*/
+}
+
+Puis utiliser dans l'HTML : class="star star(5)" pour avoir 4 étoile bleu et une grise
+                            class="star star(4)" pour avoir 4 étoile bleu et une grise
+                            ...
+*/
 
 
 /* ---------- Section hébergements ----------*/
@@ -354,18 +362,19 @@ figure ::after {
     display: flex;
 }
 
-
+#hebergements h2 {
+    margin-bottom: 30px;
+}
 
 /* -- hébergements à marseille -- */
 
 
 #hebergements_marseille { 
     width: 75%;
-    height: 700px;
     background-color: #f2f2f2;
     border-radius: 30px;
-    margin-right: 5%;
-    padding: 10px 40px 10px 40px;
+    margin-right: 30px;
+    padding: 20px 40px 40px 40px;
 }
 
 #tout_hebergements { 
@@ -375,7 +384,7 @@ figure ::after {
 }
 
 .hebergement { 
-    width: 300px;
+    width: 320px;
     border-radius: 30px;
     margin: 0px 10px 40px 10px;
 }
@@ -387,8 +396,6 @@ figure ::after {
     border-radius: 17px 17px 0px 0px;
 }
 
-
-
 #afficher_plus {
     font-size: 24px;
     font-weight: bold;
@@ -398,13 +405,47 @@ figure ::after {
 
 
 #plus_populaires {
-    width: 350px;
+    width: 25%;
+    min-width: 300px;
+    max-height: 700px;
     background-color: #f2f2f2;
     border-radius: 30px;
+    padding: 30px;
+}
+
+#titre_populaires {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.fa-star {
+    font-size: 26px;
+    padding-bottom: 15px;
+}
+
+.populaire figure {
+    display: flex;
+    max-height: 150px;
+    margin-bottom: 50px;
+    height: 20%;
+    max-height: 200px;
+}
+
+.populaire figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.populaire .star {
+    margin-top: auto;
 }
 
 .img_populaires {
-    width: 200px;
+    width: 40%;
+    object-fit: cover;
+    border-radius: 17px 0px 0px 17px;
 }
 
 
@@ -413,20 +454,80 @@ figure ::after {
 
 
 
-#activites figure {
+#activites {
+    margin-top: 70px;
+}
+
+#activites h2 {
+    margin-bottom: 30px;
+}
+
+#toutes_activites {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+    
+}
+
+#toutes_activites figure {
+    width: 380px;
     border: none;
 }
 
+#toutes_activites h3 {
+    margin-left: 20px;
+}
 
 .img_activites {
-    width: 200px;
+    width: 380px;
+    height: calc(100% - 45px);
+    object-fit: cover;
+    border-radius: 18px 18px 0px 0px;
 }
-/* -_-_-_-_-_ Media Queries _-_-_-_-_- */
+
+.activité:nth-child(1) { 
+    height: 500px;
+}
+
+.activité:nth-child(2) {
+    height: 275px;
+}
+
+.activité:nth-child(3) { 
+    height: 175px;
+}
+
+.activité:nth-child(4) { 
+    height: 500px;
+}
+
+.activité:nth-child(5) { 
+    height: 225px;
+}
+
+.activité:nth-child(6) { 
+    height: 225px;
+}
 
 
 
-/* -_ Smartphone _- */
+/* ---------- Footer ----------*/
 
 
 
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding-top: 30px;
+    height: 200px;
+    background-color: #f2f2f2;
+}
 
+footer section {
+    width: 30%;
+}
