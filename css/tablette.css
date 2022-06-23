@@ -1,3 +1,97 @@
-p {
-    color: ;
+/* ---------- Général ---------- */
+
+
+
+h2 {
+    font-size: 34px;
+}
+
+figcaption {
+    font-size: 22px;
+}
+
+/* ---------- Section hébergements ----------*/
+
+
+
+#hebergements {
+    flex-direction: column-reverse;
+}
+
+
+/* -- Hébergements à marseille -- */
+
+#hebergements_marseille { 
+    background-color: #f2f2f2;
+    width: 90%;
+    margin-top: 30px;
+    
+}
+
+/* -- Les plus populaires --*/
+
+
+#plus_populaires {
+    width: auto;
+    max-height: none;
+}
+
+.img_populaires {
+    width: 50%;
+}
+
+
+/* ---------- Section activités à Marseille ---------- */
+
+
+
+#toutes_activites { background-color: ;
+   
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+    height: 1025px;   
+}
+
+#toutes_activites figure {
+    width: 47.5%;
+    border: none;
+}
+
+.img_activites {
+    width: 100%;
+    height: calc(100% - 60px);
+    object-fit: cover;
+    border-radius: 18px 18px 0px 0px;
+}
+
+#toutes_activites figcaption { 
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 20px;   
+}
+
+
+
+/* ---------- Footer ----------*/
+
+
+
+footer {
+    flex-direction: column;
+    height: 600px;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+footer section {
+    width: 90%;
+    margin: auto;
+}
+
+footer p {
+    font-size: 18px;
 }

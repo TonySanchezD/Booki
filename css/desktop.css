@@ -407,7 +407,7 @@ Puis utiliser dans l'HTML : class="star star(5)" pour avoir 4 étoile bleu et un
 #plus_populaires {
     width: 25%;
     min-width: 300px;
-    max-height: 700px;
+    max-height: 800px;
     background-color: #f2f2f2;
     border-radius: 30px;
     padding: 30px;
@@ -527,6 +527,7 @@ footer {
     justify-content: center;
     margin-top: 50px;
     padding-top: 30px;
+    padding-bottom: 30px;
     height: 200px;
     background-color: #f2f2f2;
 }
