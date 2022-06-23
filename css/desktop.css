@@ -258,16 +258,16 @@ figure {
     border: 7px white solid;
     background-color: white;
     border-radius: 25px;
-    box-shadow: 5px 5px 10px #e0e0e0, 0px 0px 10px #e0e0e0;
+    box-shadow: 5px 5px 10px #e0e0e0,  0px 0px 7px #e0e0e0;
     transition: box-shadow 0.5s;
 }
 
 figcaption { 
-    margin: 10px 10px 0px 10px;
+    margin: 10px 20px 0px 20px;
 }
 
 figcaption * { 
-    margin: 0px 0px 5px 0px;
+    margin: 0px 0px 10px 0px;
 }
 
 figure:hover {
@@ -462,29 +462,32 @@ Puis utiliser dans l'HTML : class="star star(5)" pour avoir 4 étoile bleu et un
     margin-bottom: 30px;
 }
 
-#toutes_activites {
+#toutes_activites { background-color: ;
     display: flex;
     justify-content: space-between;
     align-content: space-between;
     align-items: stretch;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 500px;
-    
+    height: 500px;   
 }
 
 #toutes_activites figure {
-    width: 380px;
+    width: 22.5%;
     border: none;
 }
 
-#toutes_activites h3 {
-    margin-left: 20px;
+#toutes_activites figcaption { 
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-top: 0px;
+    margin-left: 20px;   
 }
 
 .img_activites {
-    width: 380px;
-    height: calc(100% - 45px);
+    width: 100%;
+    height: calc(100% - 50px);
     object-fit: cover;
     border-radius: 18px 18px 0px 0px;
 }
@@ -530,4 +533,8 @@ footer {
 
 footer section {
     width: 30%;
+}
+
+footer p {
+    font-size: 18px;
 }
