@@ -49,7 +49,7 @@ header{
     list-style-type: none;
 }
 
-nav a {
+nav li {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,10 +57,22 @@ nav a {
     font-size: 20px;
 }
 
-nav a:hover {
+nav li:hover {
     border-top: 2px #0065FC solid;
     padding-bottom: 2px;
     color: #0065FC;
+}
+
+nav li:hover a {
+    color: #0065FC;
+}
+
+nav a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -259,7 +271,10 @@ figure {
     background-color: white;
     border-radius: 25px;
     box-shadow: 5px 5px 10px #e0e0e0,  0px 0px 7px #e0e0e0;
-    transition: box-shadow 0.5s;
+    right: 0px;
+    bottom: 0px;
+    transition: box-shadow 0.3s;
+
 }
 
 figcaption { 
@@ -271,8 +286,12 @@ figcaption * {
 }
 
 figure:hover {
-    box-shadow: 20px 20px 20px #e0e0e0, 2px 2px 10px #e0e0e0;;
+    box-shadow: 20px 20px 20px #e0e0e0, 2px 2px 10px #e0e0e0;
+    position: relative;
+    bottom: 1px;
+    right: 1px;
 }
+
 
 
 /* -- star -- */
@@ -284,11 +303,11 @@ figure:hover {
 }
 
 :root {
-    --star: "\f005"; /* "\005" est une étoile avec la police Font Awesome */
-    --two-star: var(--star) var(--star);
-    --three-star: var(--two-star) var(--star);
-    --four-star: var(--three-star) var(--star);
-    --five-star: var(--four-star) var(--star);
+    --one-star: "\f005"; /* "\f005" est une étoile avec la police Font Awesome */
+    --two-star: var(--one-star) var(--one-star);
+    --three-star: var(--two-star) var(--one-star);
+    --four-star: var(--three-star) var(--one-star);
+    --five-star: var(--four-star) var(--one-star);
 
 }
 
@@ -309,7 +328,7 @@ figure ::after {
 }
 
 .star4::after {
-    content: var(--star);
+    content: var(--one-star);
 }
 
 .star3::before {
@@ -329,7 +348,7 @@ figure ::after {
 }
 
 .star1::before {
-    content: var(--star);
+    content: var(--one-star);
 }
 
 .star1::after {
@@ -339,18 +358,20 @@ figure ::after {
 
 
 /*.star(x)::before {
-    content: (x) *"\f005" ;
+    content: (x) * var(--one-star) ;
     color: #0065FC;
 }
 
 .star(x)::after {
-    content:  (5 - (x)) *"\f005";
+    content:  (5 - (x)) * var(--one-star);
     color: #e0e0e0;
 }
 
-Puis utiliser dans l'HTML : class="star star(5)" pour avoir 4 étoile bleu et une grise
-                            class="star star(4)" pour avoir 4 étoile bleu et une grise
-                            ...
+Puis utiliser dans l'HTML : class="star star(x=5)" pour avoir 5 étoile bleu.
+                            class="star star(x=4)" pour avoir 4 étoile bleu et 1 grise.
+                            class="star star(x=3)" pour avoir 3 étoile bleu et 2 grise.
+                            class="star star(x=2)" pour avoir 2 étoile bleu et 3 grise.
+                            class="star star(x=1)" pour avoir 1 étoile bleu et 4 grise.
 */
 
 
@@ -400,6 +421,11 @@ Puis utiliser dans l'HTML : class="star star(5)" pour avoir 4 étoile bleu et un
     font-size: 24px;
     font-weight: bold;
 }
+
+#afficher_plus:hover {
+    text-decoration: underline;
+}
+
 
 /* -- Les plus populaires --*/
 
@@ -462,7 +488,7 @@ Puis utiliser dans l'HTML : class="star star(5)" pour avoir 4 étoile bleu et un
     margin-bottom: 30px;
 }
 
-#toutes_activites { background-color: ;
+#toutes_activites {
     display: flex;
     justify-content: space-between;
     align-content: space-between;
@@ -472,8 +498,12 @@ Puis utiliser dans l'HTML : class="star star(5)" pour avoir 4 étoile bleu et un
     height: 500px;   
 }
 
-#toutes_activites figure {
+#toutes_activites a {
     width: 22.5%;
+}
+
+#toutes_activites figure {
+    width: 100%;
     border: none;
 }
 
@@ -486,33 +516,33 @@ Puis utiliser dans l'HTML : class="star star(5)" pour avoir 4 étoile bleu et un
 }
 
 .img_activites {
-    width: 100%;
+    width: 100% ;
     height: calc(100% - 50px);
     object-fit: cover;
     border-radius: 18px 18px 0px 0px;
 }
 
-.activité:nth-child(1) { 
+#toutes_activites>:nth-child(1)>:nth-child(1) {
     height: 500px;
 }
 
-.activité:nth-child(2) {
+#toutes_activites>:nth-child(2)>:nth-child(1) {
     height: 275px;
 }
 
-.activité:nth-child(3) { 
+#toutes_activites>:nth-child(3)>:nth-child(1) { 
     height: 175px;
 }
 
-.activité:nth-child(4) { 
+#toutes_activites>:nth-child(4)>:nth-child(1) { 
     height: 500px;
 }
 
-.activité:nth-child(5) { 
+#toutes_activites>:nth-child(5)>:nth-child(1) { 
     height: 225px;
 }
 
-.activité:nth-child(6) { 
+#toutes_activites>:nth-child(6)>:nth-child(1) { 
     height: 225px;
 }
 
@@ -538,4 +568,8 @@ footer section {
 
 footer p {
     font-size: 18px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

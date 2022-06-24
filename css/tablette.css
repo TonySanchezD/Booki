@@ -28,6 +28,10 @@ figcaption {
     
 }
 
+#hebergements_marseille figcaption {
+    height: 130px;
+}
+
 /* -- Les plus populaires --*/
 
 
@@ -41,12 +45,12 @@ figcaption {
 }
 
 
+
 /* ---------- Section activités à Marseille ---------- */
 
 
 
-#toutes_activites { background-color: ;
-   
+#toutes_activites {
     justify-content: space-between;
     align-content: space-between;
     align-items: stretch;
@@ -54,8 +58,12 @@ figcaption {
     height: 1025px;   
 }
 
-#toutes_activites figure {
+#toutes_activites a {
     width: 47.5%;
+}
+
+#toutes_activites figure {
+    width: 100%;
     border: none;
 }
 
