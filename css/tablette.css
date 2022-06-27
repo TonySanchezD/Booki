@@ -10,6 +10,8 @@ figcaption {
     font-size: 22px;
 }
 
+
+
 /* ---------- Section hébergements ----------*/
 
 
@@ -21,6 +23,7 @@ figcaption {
 
 /* -- Hébergements à marseille -- */
 
+
 #hebergements_marseille { 
     background-color: #f2f2f2;
     width: 90%;
@@ -31,6 +34,7 @@ figcaption {
 #hebergements_marseille figcaption {
     height: 130px;
 }
+
 
 /* -- Les plus populaires --*/
 
