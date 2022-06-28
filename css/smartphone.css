@@ -8,12 +8,7 @@ main {
     overflow: hidden;
 }
 
-#activites {
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-#hebergements_marseille {
+#activites, #hebergements_marseille {
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -196,6 +191,7 @@ h3, figcaption p, .star {
     width: 90%;
     border-radius: 0px;
     padding: 30px 0px 0px 0px;
+    margin: auto;
 }
 
 .hebergement {
