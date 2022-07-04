@@ -1,3 +1,30 @@
+/* --------------- Somaire --------------- */
+
+
+
+/* ---------- Body ---------- */
+
+/* ---------- Header ---------- */
+
+/* ---------- Section Recherche ---------- */
+
+/* ---------- Figures ----------*/
+
+/* ---------- Section hébergements ----------*/
+
+/* ---------- Section activités à Marseille ---------- */
+
+/* ---------- Footer ---------- */
+
+
+
+/* --------------- Somaire --------------- */
+
+
+
+
+
+
 /* ---------- Body ---------- */
 
 
@@ -264,7 +291,7 @@ form .fa-input {
 
 
 
-/* ---------- Toutes les Figures ----------*/
+/* ---------- Figures ----------*/
 
 
 
@@ -357,24 +384,6 @@ figure ::after {
 
 
 
-/*.star(x)::before {
-    content: (x) * var(--one-star) ;
-    color: #0065FC;
-}
-
-.star(x)::after {
-    content:  (5 - (x)) * var(--one-star);
-    color: #e0e0e0;
-}
-
-Puis utiliser dans l'HTML : class="star star(x=5)" pour avoir 5 étoile bleu.
-                            class="star star(x=4)" pour avoir 4 étoile bleu et 1 grise.
-                            class="star star(x=3)" pour avoir 3 étoile bleu et 2 grise.
-                            class="star star(x=2)" pour avoir 2 étoile bleu et 3 grise.
-                            class="star star(x=1)" pour avoir 1 étoile bleu et 4 grise.
-*/
-
-
 /* ---------- Section hébergements ----------*/
 
 
@@ -456,6 +465,7 @@ Puis utiliser dans l'HTML : class="star star(x=5)" pour avoir 5 étoile bleu.
     max-height: 150px;
     margin-bottom: 50px;
     height: 22%;
+    
     max-height: 200px;
 }
 
