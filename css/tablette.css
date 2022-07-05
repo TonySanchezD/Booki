@@ -55,10 +55,9 @@ figcaption {
 
 
 #toutes_activites {
-    justify-content: space-between;
-    align-content: space-between;
+   
+
     align-items: stretch;
-    flex-direction: column;
     height: 1025px;   
 }
 

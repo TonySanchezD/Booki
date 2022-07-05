@@ -462,10 +462,8 @@ figure ::after {
 
 .populaire figure {
     display: flex;
-    max-height: 150px;
     margin-bottom: 50px;
     height: 22%;
-    
     max-height: 200px;
 }
 
