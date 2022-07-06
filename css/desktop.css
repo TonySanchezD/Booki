@@ -415,7 +415,8 @@ figure ::after {
 }
 
 .hebergement { 
-    width: 320px;
+    width: 30%;
+    min-width: 200px;
     border-radius: 30px;
     margin: 0px 10px 40px 10px;
 }
@@ -442,7 +443,7 @@ figure ::after {
 
 #plus_populaires {
     width: 25%;
-    min-width: 300px;
+    min-width: 200px;
     max-height: 800px;
     background-color: #f2f2f2;
     border-radius: 30px;
